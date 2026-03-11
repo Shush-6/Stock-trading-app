@@ -1,57 +1,171 @@
-# MERN Stack Stock Trading Web Application
+# 📈 MERN Stack Stock Trading Web Application
 
-A complete full-stack MERN application for virtual stock trading.
+A complete **full-stack MERN application** for **virtual stock trading**.
 
-## Prerequisites
+💻 Built using the **MERN Stack**:
 
-- Node.js installed
-- MongoDB Atlas cluster connection URI
+* MongoDB
+* Express.js
+* React.js
+* Node.js
 
-## Local Development
+Users can simulate stock trading with a **virtual wallet** and manage their portfolio in a modern web interface.
 
-1. Create a `.env` file in the root based on `.env.example`. Provide your MongoDB connection string and a random JWT Secret.
-2. Open terminal in the root folder and run:
-   ```bash
-   npm install
-   ```
-3. Seed the database with sample stocks:
-   ```bash
-   npm run seed
-   ```
-4. Run the development server (runs both frontend and backend concurrently normally, but we have separate paths. For easiest dev, open two terminals):
-   **Terminal 1 (Backend):** 
-   ```bash
-   npm run server
-   ```
-   **Terminal 2 (Frontend):**
-   ```bash
-   cd client
-   npm run dev
-   ```
+---
 
-## Render Deployment Instructions
+# ⚙️ Prerequisites
 
-This project is already configured for easy deployment on Render as a single Web Service.
+Before running the project, make sure you have:
 
-1. Create a new **Web Service** on Render and connect your GitHub repository.
-2. Setup the configuration as follows:
-   - **Environment:** Node
-   - **Build Command:** `npm run build`
-   - **Start Command:** `npm start`
-3. Add the following **Environment Variables**:
-   - `MONGO_URI` (Your MongoDB Atlas connection string)
-   - `JWT_SECRET` (A strong random secret key for authentication)
-4. Click **Deploy**. Render will automatically:
-   - Run `npm install` on the root (which installs backend dependencies)
-   - Run the custom build script `npm run build` (which installs frontend dependencies and builds the React app inside `/client/dist`)
-   - Run `npm start` (which spins up the Express server that serves the API and the React build files)
+* 🟢 Node.js installed
+* 🗄 MongoDB Atlas Cluster connection URI
 
-## Features Included
+---
 
-- User Authentication with JWT (Register & Login)
-- Virtual $10,000 Wallet Balance for new users
-- Market Dashboard to browse available stocks
-- Buying stocks and dynamic wallet updates
-- Portfolio Page showing owned assets and current valuation
-- Selling stocks directly from the portfolio
-- Beautiful, clean, modern UI.
+# 🧑‍💻 Local Development Setup
+
+Follow these steps to run the project locally.
+
+## 1️⃣ Create Environment Variables
+
+Create a `.env` file in the **root folder** based on `.env.example`.
+
+Add the following:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_random_secret_key
+
+---
+
+## 2️⃣ Install Dependencies
+
+Open terminal in the **root folder** and run:
+
+```bash
+npm install
+```
+
+---
+
+## 3️⃣ Seed Sample Stock Data
+
+Populate the database with sample stock data.
+
+```bash
+npm run seed
+```
+
+---
+
+## 4️⃣ Run Development Servers
+
+Run **backend and frontend separately** using two terminals.
+
+### 🖥 Terminal 1 – Backend Server
+
+```bash
+npm run server
+```
+
+### 🎨 Terminal 2 – Frontend (React App)
+
+```bash
+cd client
+npm run dev
+```
+
+Now open the frontend in your browser.
+
+---
+
+# ☁️ Render Deployment Instructions
+
+This project is already configured for **easy deployment on Render** as a **single Web Service**.
+
+## 1️⃣ Create Web Service
+
+Go to **Render Dashboard** and:
+
+* Create a **New Web Service**
+* Connect your **GitHub Repository**
+
+---
+
+## 2️⃣ Configure Deployment Settings
+
+Use the following configuration:
+
+Environment: Node
+Build Command: `npm run build`
+Start Command: `npm start`
+
+---
+
+## 3️⃣ Add Environment Variables
+
+Add the following variables in **Render Environment Settings**:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_random_secret_key
+
+---
+
+## 4️⃣ Deploy 🚀
+
+Click **Deploy**.
+
+Render will automatically:
+
+1️⃣ Run `npm install`
+2️⃣ Run `npm run build` to build the React app
+3️⃣ Run `npm start` to launch the Express server
+
+The **Express server serves both API and frontend build files**.
+
+---
+
+# ✨ Features Included
+
+🔐 **User Authentication**
+
+* Register & Login system
+* Secure JWT authentication
+
+💰 **Virtual Wallet**
+
+* New users start with **$10,000 virtual balance**
+
+📊 **Market Dashboard**
+
+* Browse available stocks
+* View stock prices
+
+🛒 **Buy Stocks**
+
+* Purchase stocks directly from the market
+* Wallet updates dynamically
+
+📁 **Portfolio Page**
+
+* View owned stocks
+* See total investment value
+
+💸 **Sell Stocks**
+
+* Sell stocks anytime from the portfolio
+* Wallet balance updates instantly
+
+🎨 **Modern UI**
+
+* Clean and responsive design
+* Smooth user experience
+
+---
+
+✅ **Perfect for learning:**
+
+* MERN Stack Development
+* Full-Stack Architecture
+* REST APIs
+* Authentication with JWT
+* MongoDB Database Integration
