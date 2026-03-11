@@ -54,4 +54,4 @@ This project is already configured for easy deployment on Render as a single Web
 - Buying stocks and dynamic wallet updates
 - Portfolio Page showing owned assets and current valuation
 - Selling stocks directly from the portfolio
-- Beautiful, clean, modern UI
+- Beautiful, clean, modern UI.
